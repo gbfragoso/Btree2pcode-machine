@@ -244,8 +244,8 @@ Tinstruction * toInstruction(char *epr){
 
 void pcode(Tinstruction inst[]){
 	int base = 1;				// Points to the base address in the stack for the current invocation of a given procedure
-    int top = 0; 				// Points to the current top of the stack
-    int counter = 0;  			// Points to an instruction in the program area
+    	int top = 0; 				// Points to the current top of the stack
+    	int counter = 0;  			// Points to an instruction in the program area
 	
 	int aux;
 	int stop = 0;
@@ -389,7 +389,7 @@ char * getInstructionName(int inst){
 }
 
 char * postOrder(char * array[]){
-    printf("%s %s %s",array[0], array[1], array[2]);
+    
 }
 
 char * setLeft(int father, char * array){
