@@ -7,8 +7,8 @@ gcc -o btree2pcode btree2pcode.c
 # Running
 ./btree2pcode filename numValues
 
-filename: Name of file (Must be in same folder of btree2pcode.c)
-numValues: Number of values in input file (include 0, see next section)
+* filename: Name of file (Must be in same folder of btree2pcode.c)
+* numValues: Number of values in input file (include 0, see next section)
 
 # Input
 This program accepts as input a comma-separated text file that represents the nodes of a binary tree. The root is the first value, left nodes (2 * pos + 1) and right nodes (2 * pos+2), where pos is the position of father in array.
