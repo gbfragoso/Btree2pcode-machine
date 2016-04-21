@@ -27,6 +27,15 @@ The input file for tree above is: *,~,6,+,0,0,0,10,5 (Note 0's to fill the empty
 * Your tree has nodes on right position
 * A postorder search on that tree will return a valid Reverse Polish Notation.
 
+# Glossary
+* Inst: Instruction's name;
+* Level: Instruction's level (nesting in recursive calls) field;
+* Arg: Instruction's argument (address or data) field;
+* Top: Stack's top pointer;
+* Counter: Program counter (current instruction in instructions array);
+* Base: Points to the base address in the stack for the current invocation of a given procedure;
+* Stack: A vector used as a datastore for mutable data. All values are integers. 
+
 # Example 
 ```
 run: ./btree2pcode input.txt 9
