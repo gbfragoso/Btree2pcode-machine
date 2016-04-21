@@ -75,4 +75,5 @@ int main (int argc, char **argv){
 		    pcode(instructions, stack);
     	}
     }
+    return 0;
 }
