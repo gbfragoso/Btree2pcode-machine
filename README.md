@@ -11,7 +11,7 @@ filename: Name of file (Must be in same folder of btree2pcode.c)
 numValues: Number of values in input file (include 0, see next section)
 
 # Input
-This program accepts as input an comma-separated text file that represents the nodes of a binary tree. The root is the first value, left nodes (2 * pos + 1) and right nodes (2 * pos+2), where pos is the position of father in array.
+This program accepts as input a comma-separated text file that represents the nodes of a binary tree. The root is the first value, left nodes (2 * pos + 1) and right nodes (2 * pos+2), where pos is the position of father in array.
 
 Example:
 
@@ -25,6 +25,7 @@ The input file for tree above is: 2,7,5,2,6,0,9,0,0,5,11,0,0,4 (Note 0's to fill
 
 # Example 
 ```
+run: ./btree2pcode input.txt 9
 input: *,~,6,+,0,0,0,10,5
 RPN: 10 5 + ~ 6 *
 Output:
