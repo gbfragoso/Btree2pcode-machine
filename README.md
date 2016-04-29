@@ -38,12 +38,12 @@ The input file for tree above is: *,~,6,+,0,0,0,10,5 (Note 0's to fill the empty
 
 # Example 
 ```
-run: ./btree2pcode input.txt 9
-input: *,~,6,+,0,0,0,10,5
-RPN: 10 5 + ~ 6 *
+Running: ./btree2pcode input.txt 9
+Input: *,~,6,+,0,0,0,10,5
+Reverse Polish Notation: 10 5 + ~ 6 *
+
 Output:
 
-Starting the P-code Machine.
 Inst       Level           Arg             Top             Counter         Base            Stack
 INT        0               9               9               1               1              0 0 0 0 0 0 0 0 0 
 LIT        0               10              10              2               1              0 0 0 0 0 0 0 0 0 10 
