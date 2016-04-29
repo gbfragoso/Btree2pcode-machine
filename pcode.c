@@ -1,7 +1,7 @@
 #include "pcode.h"
 #include <stdio.h>
 
-void pcode(Tinstruction inst[], int stack[]){
+void pcode(Tinstruction inst[], int stack[], FILE *output){
 	int base = 1;				// Points to the base address in the stack for the current invocation of a given procedure
     int top = 0; 				// Points to the current top of the stack
     int counter = 0;  			// Points to an instruction in the program area
@@ -111,12 +111,12 @@ void pcode(Tinstruction inst[], int stack[]){
     	}
     		
     	// PrintStackTrace
-    	printf("%-10s %-15d %-15d %-15d %-15d %-15d", getInstructionName(instruction.operation),instruction.level, instruction.argument, top, counter, base);
+    	fprintf(output,"%-10s %-15d %-15d %-15d %-15d %-15d", getInstructionName(instruction.operation),instruction.level, instruction.argument, top, counter, base);
     
     	for (aux = base; aux<top+1;aux++){
-    		printf("%d ", stack[aux]);
+    		fprintf(output,"%d ", stack[aux]);
     	}
-    	printf("\n");
+    	fprintf(output,"\n");
     	
     	// If RTN, stop
     	stop = (instruction.operation == 1 && instruction.argument == 0);
