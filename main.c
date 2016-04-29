@@ -16,8 +16,8 @@ typedef char * string;
 int main (int argc, char **argv){
 	
 	int stack[1024] = {-1};		// Vector with only integers, used as a datastore
-    int treeSize = 0;			// Number of values at input file
-    string *btree;				// Dynamic allocated Binary Tree (Array of char*)
+	int treeSize = 0;			// Number of values at input file
+	string *btree;				// Dynamic allocated Binary Tree (Array of char*)
     
     FILE *input;
     
@@ -91,7 +91,7 @@ int main (int argc, char **argv){
 	    	printf("Error when opening the input file.");
 	    }
     }else{
-    	printf("Insuficient params");
+    	printf("Not enough params");
     }
     return 0;
 }
